@@ -4,7 +4,7 @@ Hello everyone, I am gonna showing to you how to code a Sudoku Solver with JavaS
 ## screenshot: ![Sudoku Image](https://github.com/AndyMagwayer/Sudoku-JavaScript/blob/main/screenshot%20(1).jpg)
 
 
-## deploy:
+## deploy: https://sudoku-javascript-by-magamed.netlify.app/
 
 ## About Sudoku: 
 Sudoku (/suːˈdoʊkuː, -ˈdɒk-, sə-/; Japanese: 数独, romanized: sūdoku, lit. 'digit-single'; originally called Number Place)[1] is a logic-based,[2][3] combinatorial[4] number-placement puzzle. In classic Sudoku, the objective is to fill a 9 × 9 grid with digits so that each column, each row, and each of the nine 3 × 3 subgrids that compose the grid (also called "boxes", "blocks", or "regions") contain all of the digits from 1 to 9. The puzzle setter provides a partially completed grid, which for a well-posed puzzle has a single solution.
