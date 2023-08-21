@@ -116,4 +116,19 @@ function isValidMove(board, row, col, num){
             return false; //Conflict found
         }
     }
+
+
+    // Check the 3*3 subgrid for conflicts 
+    const startRow = Math.floor(row / 3) * 3;
+    const startCol = MAth.floor(col / 3) * 3;
+
+    for (let i = startRow; i < startRow + 3 ; i++){
+        for(let j = startCol; j < startCol; j++){
+            if(board[i][j] === num ){
+                return false; //COnflict Found
+            }
+        }
+    }
+
+    return true ; //NO conflicts
 }
