@@ -24,5 +24,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 async function solveSudoku(){
-    
+    const gridSize = 9;
+    const SudokuArray = [];
+
+
+// fill the sudokuArray with input values from the grid 
 }
