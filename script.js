@@ -56,4 +56,15 @@ async function solveSudoku() {
 
 
     // SOlve the sudoku and  display the solutions 
+    if(solveSudokuHelper(SudokuArray)){
+        for(let row = 0; row < gridSize; row++){
+            for(let col = 0; col < gridSize; col++){
+                const cellId = `cell-${row}-${col}`;
+                const cell = document.getElementById(cellId);
+
+
+                // Fill in solved values and  apply animation 
+            }
+        }
+    }
 }
