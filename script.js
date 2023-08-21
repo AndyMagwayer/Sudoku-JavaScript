@@ -64,6 +64,13 @@ async function solveSudoku() {
 
 
                 // Fill in solved values and  apply animation 
+                if(!cell.classList.contains("user-input")){
+                    cell.ariaValue = SudokuArray[row][col];
+                    cell.classList.add("solved");
+                    await sleep(20);
+                    // add a delay for visualization 
+
+                }
             }
         }
     }
