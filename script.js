@@ -22,3 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+
+async function solveSudoku(){
+    
+}
