@@ -41,5 +41,19 @@ async function solveSudoku() {
 
 
     // Identify user-input cells and mark them 
-    
+    for(let row = 0; row < gridSize; row++){
+        for(let col = 0; col < gridSize; col++){
+            const cellId  = `cell-${row}-${col}`;
+            const cell = document.getElementById(cellId);
+
+
+            if(SudokuArray[row][col] !== 0){
+                cell.classList.add("user-input");
+            }
+        }
+
+    }
+
+
+    // SOlve the sudoku and  display the solutions 
 }
