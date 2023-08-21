@@ -73,5 +73,26 @@ async function solveSudoku() {
                 }
             }
         }
+    }else{
+    alert("NO Solution exists for the given Sudoku puzzle.");
+    }
+}
+
+function solveSudokuHelper(board){
+    const gridSize = 9;
+
+    for(let row = 0; row < gridSize; row++){
+        for(let col = 0; col < gridSize; col++){
+            if(board[row][col] ===0){
+                for (let number = 1; num <=9; num++){
+                    if(isValidMove(board, row, col, num)){
+                        board[row][col] =num;
+
+            
+                        // Recursively attemt to solve the  Sudoku
+                    }
+                }
+            }
+        }
     }
 }
