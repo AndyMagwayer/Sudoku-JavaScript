@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const gridSize = 9;
     const solveButton = document.getElementById("solve-btn");
     solveButton.addEventListener('click', solveSudoku);
@@ -6,9 +6,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const sudokuGrid = document.getElementById("sudoku-grid");
 
     // Create the sudoku grid and input cells 
-    for(let row = 0; row < gridSize; row++){
+    for (let row = 0; row < gridSize; row++) {
         const newRow = document.createElement("tr");
-        for(let col = 0; col < gridSize; col++){
+        for (let col = 0; col < gridSize; col++) {
             const cell = document.createElement("td");
             const input = document.createElement("input");
             input.type = "number";
@@ -16,17 +16,30 @@ document.addEventListener('DOMContentLoaded', function() {
             input.id = `cell-${row}-${col}`;
             cell.appendChild(input);
             newRow.appendChild(cell);
-            
+
         }
         sudokuGrid.appendChild(newRow);
     }
 });
 
 
-async function solveSudoku(){
+async function solveSudoku() {
     const gridSize = 9;
     const SudokuArray = [];
 
 
-// fill the sudokuArray with input values from the grid 
+    // fill the sudokuArray with input values from the grid 
+    for (let row = 0; row < gridSize; row++) {
+        SudokuArray[row] = [];
+        for (let col = 0; col < gridSize; col++) {
+            const cellId = `cell-${row}-${col}`;
+            const cellValue = document.getElementById(cellId).ariaValueMax;
+            SudokuArray[row][col] = cellValue !== "" ? parsInt
+                (cellValue) : 0;
+        }
+    }
+
+
+    // Identify user-input cells and mark them 
+    
 }
