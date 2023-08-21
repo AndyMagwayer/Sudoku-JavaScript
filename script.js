@@ -92,11 +92,23 @@ function solveSudokuHelper(board){
                         // Recursively attemt to solve the  Sudoku
                         if(solveSudokuHelper(board)){
                             return true;
-                            //Puzzle Solved
+                            //Puzzle Solved     
                         }
+
+                        board[row][col] = 0; //BAcktrack
                     }
                 }
+                return false; //No valid Number found 
             }
         }
     }
+
+    return true; // all cells filled 
+}
+
+function isValidMove(board, row, col, num){
+    const gridSize = 9;
+
+
+    //Check row and column for conflicts 
 }
