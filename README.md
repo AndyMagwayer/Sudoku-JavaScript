@@ -1,7 +1,7 @@
 # Sudoku-JavaScript
 Hello everyone, I am gonna showing to you how to code a Sudoku Solver with JavaScript. With this code you can solve any sudoku puzzles! just input numbers then click on solve puzzle❗️
 
-## screenshot: ![Image alt](https://github.com/{username}/{repository}/raw/{branch}/{path}/image.png)
+## screenshot: ![Sudoku Image](https://github.com/AndyMagwayer/Sudoku-JavaScript/blob/main/screenshot%20(1).jpg)
 
 
 ## deploy:
