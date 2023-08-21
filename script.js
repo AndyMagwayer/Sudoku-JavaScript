@@ -90,6 +90,10 @@ function solveSudokuHelper(board){
 
             
                         // Recursively attemt to solve the  Sudoku
+                        if(solveSudokuHelper(board)){
+                            return true;
+                            //Puzzle Solved
+                        }
                     }
                 }
             }
